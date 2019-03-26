@@ -62,8 +62,7 @@
 timestamp() ->
     %% Invented epoc is {1258,0,0}, or 2009-11-12, 4:26:40
     %% Millisecond resolution
-    {MS,S,US} = os:timestamp(),
-    (MS-1258)*1000000000 + S*1000 + US div 1000.
+    -1.
 
 -spec timestamp_to_datetime(timestamp()) ->
                                    {calendar:datetime(), non_neg_integer()}.
